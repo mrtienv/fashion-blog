@@ -1,0 +1,17 @@
+@for $i from 1 through 5{
+  .max-line-#{$i} {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $i;
+    -webkit-box-orient: vertical;
+  }
+  .line-#{$i}{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $i;
+    height: 1.5em * $i;
+    -webkit-box-orient: vertical;
+  }
+}

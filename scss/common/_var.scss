@@ -1,0 +1,13 @@
+@function getColor($color, $nth) {
+  @return nth(map-get($colors, $color), $nth);
+}
+$lg: "screen and (min-width: 992px)";
+$mobi: "screen and (max-width: 991px)";
+$fonts: (10, 15, 16, 18, 20, 24, 36, 48, 64);
+$colors: (
+        white: (#ffffff),
+        black: (#000000),
+        light: (#F1F1F1),
+        red: (#F44336)
+);
+$color-hover-grey: #ccc;
